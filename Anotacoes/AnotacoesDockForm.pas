@@ -16,7 +16,6 @@ type
     procedure FormActivate(Sender: TObject);
     procedure Memo1KeyPress(Sender: TObject; var Key: Char);
   private
-    Saving: Boolean;
     procedure SaveKey(KeyName, KeyValue: string);
   public
     class procedure RemoveAnotacoesDockForm;

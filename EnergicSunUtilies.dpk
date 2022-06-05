@@ -39,11 +39,15 @@ requires
   JvCore,
   JvSystem,
   JvStdCtrls,
-  JvDB;
+  JvDB,
+  vclie,
+  vcledge;
 
 contains
-  BaseDockForm in '.\BaseDockForm.pas' {BaseDockableForm},
-  AnotacoesDockForm in '.\Anotacoes\AnotacoesDockForm.pas' {AnotacoesDockableForm},
-  AnotacoesDockFormExpert in '.\Anotacoes\AnotacoesDockFormExpert.pas';
+  BaseDockForm in 'BaseDockForm.pas' {BaseDockableForm},
+  AnotacoesDockForm in 'Anotacoes\AnotacoesDockForm.pas' {AnotacoesDockableForm},
+  AnotacoesDockFormExpert in 'Anotacoes\AnotacoesDockFormExpert.pas',
+  BrowserDockForm in 'Browser\BrowserDockForm.pas' {BaseDockableForm1},
+  BrowserDockFormExpert in 'Browser\BrowserDockFormExpert.pas';
 
 end.
